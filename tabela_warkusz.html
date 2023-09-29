@@ -5,14 +5,115 @@
 <head>
 	<title>Jakub Warkusz</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="Content-Type" content="text/html; charset=1250">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="Keywords" content="szkola, internet">
 	<meta name="Description" content="prosta strona internetowa">
-	<meta charset="utf-8">
+	<style>
+		table {
+			border: solid 3px #006408;
+			border-top: 0;
+			border-collapse: collapse;
+			padding: 0;
+			margin: 0;
+		}
+		th {
+			padding: 2px;
+			border: solid 1px #006408;
+		}
 
+		td {
+			padding: 2px;
+			border: 1px solid #006408;
+		}
+
+		.rowspan {
+			text-align: center;
+			background-color: #dbdbdb;
+            justify-content: center;
+		}
+
+		.colspan {
+			background-color: #d9e2f3;
+			text-align: center;
+			justify-content: center;
+		}
+		caption {
+			font-family: Calibri;
+			font-size: 22px;
+			background-color: #bdd6ee;
+			border: solid 3px #006408;
+			border-bottom: 0;
+		}
+		
+		thead {
+			font-family: Calibri;
+			font-size: 17px;
+			padding: 2px;
+			background-color: #2e74b5;
+		}
+
+		tbody { 
+			font-family: 'Times New Roman';
+			font-size: 15px;
+		}
+	</style>
 <body>
-	<h1>tutaj będzie tabela</h1>
 	<br>
+	<table>
+		<caption>Procesory - Warkusz Jakub 1P</caption>
+		<thead>
+			<tr>
+				<th>Model procesora</th>
+				<th>Bazowa pręd. zegara</th>
+				<th>Cache</th>
+				<th>Data wydania</th>
+				<th>Wynik 3DMark</th>
+				<th>Przeznaczenie</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr style="background-color: #8eaadb;">
+				<td>I7-13700K</td>
+				<td>3.4GHz</td>
+				<td>30MB</td>
+				<td>09.2022</td>
+				<td>12699</td>
+				<td rowspan="4" class="rowspan">Komputer</td>
+			</tr>
+			<tr style="background-color: #acb9ca">
+				<td>I5-13600K</td>
+				<td>2.6GHz</td>
+				<td>24MB</td>
+				<td>09.2022</td>
+				<td>10339</td>
+			</tr>
+			<tr style="background-color: #8eaadb;">
+				<td>Ryzen 9 5950X</td>
+				<td>3.4GHz</td>
+				<td>64MB</td>
+				<td>05.2020</td>
+				<td>12043</td>
+			</tr>
+			<tr style="background-color: #d9e2f3;">
+				<td>Ryzen 5 5600X</td>
+				<td>3.7GHz</td>
+				<td>32MB</td>
+				<td>05.2020</td>
+				<td>5675</td>
+			</tr>
+			<tr style="background-color: #8eaadb;">
+				<td>Snapdragon 8 Gen 2</td>
+				<td>3.2GHz</td>
+				<td>8MB</td>
+				<td>11.2022</td>
+				<td>12344</td>
+				<td style="background-color: #8eaadb;" class="rowspan">Telefon</td>
+			</tr>
+			<tr>
+				<td colspan="6" class="colspan">Dane komputerowe</td>
+			</tr>
+		</tbody>
+	</table>
 	<a href="index.html">wróć</a>
 
 </body>
