@@ -1,19 +1,142 @@
-
 <!DOCTYPE html>
-<html lang="pl-PL">
-
+<html lang="en">
 <head>
-	<title>Jakub Warkusz</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="Keywords" content="szkola, internet">
-	<meta name="Description" content="prosta strona internetowa">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jakub Warkusz">
+    <title>Formularz Warkusz</title>
+    <style>
+        body {
+            background-color: #c2c2c2;
+        }
+        * {
+            padding: 0;
+            margin: 0;
+        }
 
+        table {
+			border-collapse: collapse;
+			padding: 0;
+			margin: 0;
+            width: 100%;
+		}
+
+        .rowspan {
+			text-align: center;
+            justify-content: center;
+		}
+
+		.colspan {
+			text-align: center;
+			justify-content: center;
+		}
+    </style>
+</head>
 <body>
-	<h1>tutaj będzie formularz</h1>
-	<br>
-	<a href="index.html">wróć</a>
+    <form enctype="text/plain" action="mailto:jak.war13@wp.pl" subject="formularz_dane" method="Post">
+    <h2 align="center">Formularz o przyjęcie do szkoły</h2>
+    <br><br>
+	<table>
+		<tbody>
+			<tr>
+                <td style="padding-left: 10px;">
+                    <span style="margin-right:60px;">Imię</span> <input type="text" name="imie"><br>
+                    <span style="margin-right:25px;">Nazwisko</span> <input type="text" name="nazwisko"><br>
+                    <span style="margin-right:42px;">PESEL</span> <input type="number" name="nr_pesel" minlength="11" maxlength="11"><br>
+                </td>
+                <td align="center">
+                    <span >Adres zamieszkania</span> <input type="text" name="adres"> <span>Województwo</span><select name="wojewodztwo">
+                        <option selected="1" value="pomorskie">Pomorskie</option>
+                        <option value="kujawsko-pomorskie">Kujawsko-pomorskie</option>
+                        <option value="zachodnio-pomorskie">Zachodnio-pomorskie</option>
+                        <option value="dolnoslaskie">Dolnośląskie</option>
+                        <option value="lubelskie">Lubelskie</option>
+                        <option value="lubuskie">Lubuskie</option>
+                        <option value="lodzkie">Łódzkie</option>
+                        <option value="malopolskie">Małopolskie</option>
+                        <option value="mazowieckie">Mazowieckie</option>
+                        <option value="opolskie">Opolskie</option>
+                        <option value="podkarpackie">Podkarpackie</option>
+                        <option value="podlaskie">Podlaskie</option>
+                        <option value="slaskie">Śląskie</option>
+                        <option value="warminsko-mazurskie">Warmińsko-mazurskie</option>
+                        <option value="wielkopolskie">Wielkopolskie</option>
+                    </select><br>
+                    <span style="padding:0 30px 0 ">Nr telefonu</span> <input placeholder="+48000000000" pattern="" style="width:110px;" type="number" name="nr_telefonu" minlength="12" maxlength="12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <span>Miasto</span> <input type="text" name="miasto" value="Gdańsk"><br>
+                    <span>Jak daleko masz do szkoły?</span> <input type="checkbox" checked="1" value="0-5" name="odleglosc"> 0-5km <input type="checkbox" value="6-15" name="odleglosc"> 6-15km <input type="checkbox" value="16-35" name="odleglosc"> 16-35km <input type="checkbox" value="35" name="odleglosc"> 35km+
+                </td>
+                <td style="padding-right: 10px;" align="right">
+                    <span>Co lubisz robić w wolnej chwili?</span> <select name="wolna_chwila">
+                        <option selected="1" value="gry">Grać w gry</option>
+                        <option value="ksiazki">Czytać książki</option>
+                        <option value="programowanie">Programować</option>
+                        <option value="nic">Nic</option>
+                    </select><br>
+                    <span>Klasa</span> <select name="klasa">
+                        <option selected="1" value="piekarz">Piekarz</option>
+                        <option value="cukiernik">Cukiernik</option>
+                        <option value="programisa">Programista</option>
+                    </select>
+                </td>
+            </tr>
+		</tbody>
+	</table>
+    <br><br><br>
 
+    <table>
+		<tbody>
+			<tr>
+                <td style="padding-left: 10px;">
+                    <span>Ocena z polskiego</span>
+                    <br>
+                    <span>1  </span><input type="radio" checked="1" value="1" name="ocena_polski">
+                    <span>2  </span><input type="radio" value="2" name="ocena_polski">
+                    <span>3  </span><input type="radio" value="3" name="ocena_polski">
+                    <span>4  </span><input type="radio" value="4" name="ocena_polski">
+                    <span>5  </span><input type="radio" value="5" name="ocena_polski">
+                    <span>6  </span><input type="radio" value="6" name="ocena_polski">
+                    <br>
+                    <br>
+                    <span>Ocena z matematyki</span>
+                    <br>
+                    <span>1  </span><input type="radio" checked="1" value="1" name="ocena_matematyka">
+                    <span>2  </span><input type="radio" value="2" name="ocena_matematyka">
+                    <span>3  </span><input type="radio" value="3" name="ocena_matematyka">
+                    <span>4  </span><input type="radio" value="4" name="ocena_matematyka">
+                    <span>5  </span><input type="radio" value="5" name="ocena_matematyka">
+                    <span>6  </span><input type="radio" value="6" name="ocena_matematyka">
+                    <br>
+                    <br>
+                    <br>
+                    <span>Ocena z języka nowożytnego</span>
+                    <br>
+                    <span>1  </span><input type="radio" checked="1" value="1" name="ocena_jezyk"><input style="margin-left: 30px;" type="checkbox" name="jezyk" value="angielski" checked="1"><span>  angielski</span><br>
+                    <span>2  </span><input type="radio" value="2" name="ocena_jezyk"><input style="margin-left: 30px;" type="checkbox" name="jezyk" value="niemiecki"><span>  niemiecki</span><br>
+                    <span>3  </span><input type="radio" value="3" name="ocena_jezyk"><input style="margin-left: 30px; width: 80px;" type="jezyk" placeholder="hiszpański"><span> inny (podaj jaki)</span><br>
+                    <span>4  </span><input type="radio" value="4" name="ocena_jezyk"><br>
+                    <span>5  </span><input type="radio" value="5" name="ocena_jezyk"><br>
+                    <span>6  </span><input type="radio" value="6" name="ocena_jezyk"><br>
+                </td>
+                <td style="padding-right: 30px;" align="right">
+                    <br><br>
+                    <span>Udział w konkursach</span><br>
+                    <input type="checkbox" value="tak" name="konkursy"><span style="padding-right: 14px;"> Tak (podaj jakie)</span><br>
+                    <input type="checkbox" value="nie" name="konkursy" checked="1"><span style="padding-right: 100px;"> Nie</span><br>
+                    <textarea name="konkursy_lista" placeholder="Najlepszy piekarz 2023..." ></textarea><br>
+                    <span style="padding-right: 65px;">Wolontariat</span><br>
+                    <input type="checkbox" value="tak" name="wolontariat"><span style="padding-right: 100px;"> Tak</span><br>
+                    <input type="checkbox" value="nie" name="wolontariat" checked="1"><span style="padding-right: 100px;"> Nie</span><br>
+                </td>
+            </tr>
+		</tbody>
+	</table>
+    <div align="right">
+        <span>53+13=?</span> <input style="width: 40px;margin-right: 150px;" type="password" name="weryfikacja" placeholder="wynik"><br><br>
+        <button style="width:120px;height:60px;" type="submit">WYŚLIJ</button>
+        <button style="width:120px;height:60px;margin-right:30px;" type="reset">RESET</button>
+    </div>
+</form>
+<a href="index.html">wróć</a>
 </body>
-
 </html>
